@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addTask, removeTask } from "./actions";
+import { addTask, removeTask } from "../Reducers/actions";
 
 class Todo extends Component {
   state = {
@@ -25,6 +25,7 @@ class Todo extends Component {
         <div className="form">
           <input
             type="text"
+            placeholder="New task..."
             onChange={this.handleInput}
             value={this.state.input}
           />

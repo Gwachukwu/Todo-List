@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
-import { taskReducer } from "./Components/Reducers";
+import { taskReducer } from "./Reducers/Reducers";
 import { createStore, compose } from "redux";
 import * as serviceWorker from "./serviceWorker";
 
