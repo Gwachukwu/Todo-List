@@ -3,7 +3,8 @@
 }
 h1 {
   text-align: center;
-  color: blue;
+  margin-bottom: 1rem;
+  color: rgb(88, 88, 172);
 }
 .form {
   display: flex;
@@ -13,16 +14,26 @@ h1 {
 }
 input {
   width: 50%;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
   margin: auto;
   margin-bottom: 0.5rem;
+  background-color: rgba(204, 194, 194, 0.637);
 }
 button {
   width: 30%;
   display: block;
   margin: auto;
   margin-bottom: 1rem;
-  background-color: blue;
+  padding: 0.7rem;
+  border: 0.1rem solid rgb(88, 88, 172);;
+  border-radius: 1rem;
+  outline: none;
+  background-color: rgb(88, 88, 172);
   color: white;
+  cursor: pointer;
 }
 .list {
   margin: auto;
@@ -44,6 +55,7 @@ span {
   color: white;
   padding: 0.5rem 2rem;
   border: 1px solid black;
+  cursor: pointer;
 }
 ol{
   border: 1px solid black;
