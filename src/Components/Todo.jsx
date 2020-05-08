@@ -5,12 +5,15 @@ import { addTask, removeTask } from "../Reducers/actions";
 class Todo extends Component {
   state = {
     input: "",
+    warning: "",
   };
   handleInput = (e) => {
     this.setState({ input: e.target.value });
   };
   handleClick = () => {
-    this.props.submitTask(this.state.input);
+    this.state.input === ""
+      ? this.setState({ input: "" })
+      : this.props.submitTask(this.state.input);
     this.setState({
       input: "",
     });
@@ -29,6 +32,7 @@ class Todo extends Component {
             onChange={this.handleInput}
             value={this.state.input}
           />
+          <p>{this.state.warning}</p>
           <button onClick={this.handleClick}>Add Task</button>
         </div>
         <hr />
@@ -38,7 +42,7 @@ class Todo extends Component {
               return (
                 <div className="todo" key={index}>
                   <li>{task}</li>
-                  <span onClick={() => this.handleDelete(task)}>x</span>
+                  <span onClick={() => this.handleDelete(task)}>&#10006;</span>
                 </div>
               );
             })}

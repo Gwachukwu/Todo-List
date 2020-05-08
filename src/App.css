@@ -28,12 +28,15 @@ button {
   margin: auto;
   margin-bottom: 1rem;
   padding: 0.7rem;
-  border: 0.1rem solid rgb(88, 88, 172);;
+  border: 0.1rem solid rgb(88, 88, 172);
   border-radius: 1rem;
   outline: none;
   background-color: rgb(88, 88, 172);
   color: white;
   cursor: pointer;
+}
+button:hover {
+  background-color: indigo;
 }
 .list {
   margin: auto;
@@ -57,6 +60,9 @@ span {
   border: 1px solid black;
   cursor: pointer;
 }
-ol{
+span:hover {
+  background-color: rgb(231, 18, 18);
+}
+ol {
   border: 1px solid black;
 }
