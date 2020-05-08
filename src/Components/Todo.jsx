@@ -5,7 +5,6 @@ import { addTask, removeTask } from "../Reducers/actions";
 class Todo extends Component {
   state = {
     input: "",
-    warning: "",
   };
   handleInput = (e) => {
     this.setState({ input: e.target.value });
@@ -32,7 +31,6 @@ class Todo extends Component {
             onChange={this.handleInput}
             value={this.state.input}
           />
-          <p>{this.state.warning}</p>
           <button onClick={this.handleClick}>Add Task</button>
         </div>
         <hr />
